@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 
+			HTML Basics			
+	</title>
+
+	<script type="text/javascript">
+				
+				function validation(){
+					var emaild = document.getElementById("email").placeholder;
+					alert(emaild);
+				}
+
+				function passwordPrinting(){
+					var passwordValue = document.getElementById("password").placeholder;
+					alert(passwordValue);
+				}
+
+				function getDivValue(){
+					var width = document.getElementById("divid").style.width;
+					alert(width);
+				}
+
+				function calculate(){
+
+					var numberone = parseInt(document.getElementById("numberone").value);
+					var numbertwo = parseInt(document.getElementById("numbertwo").value);
+
+					var addedValue = numberone+numberone;
+
+					alert(addedValue);
+				}
+
+	</script>
+</head>
+<body>
+
+	
+	<div  id="divid" style="width: 500px;height: 200px; background: aqua;">
+
+		<input id="numberone" type="number"  placeholder="Number One">
+		<input id="numbertwo" type="number"  placeholder="Number Two">
+		
+		<input type="button" value="Add"  onclick="calculate()" >
+	</div>
+
+	
+
+
+</body>
+</html>
